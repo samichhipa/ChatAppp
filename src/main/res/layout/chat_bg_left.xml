@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/profile"
+        android:scaleType="centerCrop"
+
+        app:civ_border_color="@null"
+        android:id="@+id/msg_profile_img"
+       />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/doc_msg"
+        android:scaleType="fitCenter"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_weight="2.5"
+        android:background="@drawable/bg_receiver"
+        android:padding="15dp"
+        android:src="@drawable/file"
+        />
+<ImageView
+android:visibility="gone"
+    android:id="@+id/image_msg"
+    android:scaleType="fitCenter"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:padding="15dp"
+    android:background="@drawable/bg_receiver"
+    android:src="@drawable/profile"
+    android:layout_weight="2.5"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text_msg"
+        android:text="Hello World"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_receiver"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_weight="2.5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:id="@+id/chat_time"
+    android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10-12-2020"
+        android:layout_gravity="center"
+        android:gravity="end"
+      />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/chat_isSeen"
+        android:paddingEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delivered"
+        android:layout_gravity="center"
+        android:gravity="end"
+        />
+</LinearLayout>

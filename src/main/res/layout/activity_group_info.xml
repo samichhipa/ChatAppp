@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/g_i_group_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:minHeight="300dp"
+                android:scaleType="fitXY" />
+
+
+            <TextView
+                android:id="@+id/g_i_descrip_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/g_i_group_img"
+                android:padding="5dp"
+                android:text="The description of the group" />
+
+            <TextView
+
+                android:id="@+id/g_i_created_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/g_i_descrip_grp"
+                android:padding="5dp"
+                android:text="created by user, date time" />
+
+
+        </RelativeLayout>
+            <TextView
+                android:id="@+id/g_i_edt_grp"
+                android:textColor="#000"
+                android:drawableStart="@drawable/ic_action_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Edit Group" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+            <TextView
+                android:id="@+id/g_i_add_participant"
+                android:textColor="#000"
+                android:drawableStart="@drawable/ic_action_delete"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Add Participants" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <TextView
+            android:id="@+id/g_i_leave_grp"
+            android:textColor="#000"
+            android:drawableStart="@drawable/ic_action_delete"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Leave Group" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#000"
+                android:drawableStart="@drawable/ic_action_participant"
+                 android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Participants" />
+
+            <TextView
+                android:id="@+id/g_i_no_of_participants"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="(N))" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                tools:listitem="@layout/add_participant_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/group_info_reyclerview"/>
+
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

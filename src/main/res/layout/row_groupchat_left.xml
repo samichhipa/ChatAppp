@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+   android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="100dp"
+    android:background="@drawable/bg_receiver"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/group_chat_sender_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Msg"
+        android:padding="3dp"
+        android:textColor="@color/Profile"/>
+    <TextView
+        android:id="@+id/group_chat_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Msg"
+        android:padding="3dp"/>
+    <TextView
+        android:id="@+id/group_chat_timestamp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:gravity="end"
+        android:padding="3dp"
+        />
+
+
+
+</LinearLayout>

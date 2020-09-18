@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:elevation="20dp"
+    app:cardCornerRadius="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/group_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/add_group"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/group_name"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="Group Name"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/group_desc"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="Description(optional)"
+            android:minHeight="120dp"
+            android:gravity="start"
+            android:padding="10dp"/>
+        
+        <Button
+            android:id="@+id/group_create_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/Chat"
+            android:textColor="@color/white"/>
+        
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
